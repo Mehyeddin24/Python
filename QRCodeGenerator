@@ -13,5 +13,6 @@ def generate_qrcode(text):
     img = qr.make_image(fill_color="black", back_color="white")
     img.save("QR_CODE.png")
 
-generate_qrcode("https://www.facebook.com")
+link = input("Enter your web-site link:")
+generate_qrcode(link)
 print("That's it. Your QR code is now in your directory folder named QR_CODE.png")
